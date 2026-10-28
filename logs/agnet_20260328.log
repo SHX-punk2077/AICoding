@@ -1,0 +1,63 @@
+2026-03-28 20:23:09,996 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有1条消息
+2026-03-28 20:23:09,996 - agnet - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|根据我现在的位置和天气，该如何保养扫地机器人
+2026-03-28 20:23:11,423 - agnet - INFO - middleware.py:20 - [monitor_tool] 监控工具执行：get_user_location
+2026-03-28 20:23:11,423 - agnet - INFO - middleware.py:21 - [monitor_tool] 传入参数：{}
+2026-03-28 20:23:11,424 - agnet - INFO - middleware.py:36 - [monitor_tool] 工具：get_user_location调用成功，耗时：0.00s
+2026-03-28 20:23:11,446 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有3条消息
+2026-03-28 20:23:11,446 - agnet - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|广州
+2026-03-28 20:23:12,110 - agnet - INFO - middleware.py:20 - [monitor_tool] 监控工具执行：get_weather
+2026-03-28 20:23:12,110 - agnet - INFO - middleware.py:21 - [monitor_tool] 传入参数：{'city': '广州'}
+2026-03-28 20:23:12,111 - agnet - INFO - middleware.py:36 - [monitor_tool] 工具：get_weather调用成功，耗时：0.00s
+2026-03-28 20:23:12,133 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有5条消息
+2026-03-28 20:23:12,133 - agnet - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|城市广州天气为晴天，气温26摄氏度，空气湿度为50%，南风1级，AQI21，最近6小时降雨概率极低
+2026-03-28 20:23:12,999 - agnet - INFO - middleware.py:20 - [monitor_tool] 监控工具执行：rag_summarize
+2026-03-28 20:23:13,000 - agnet - INFO - middleware.py:21 - [monitor_tool] 传入参数：{'query': '扫地机器人保养指南'}
+2026-03-28 20:23:13,531 - agnet - INFO - rag_service.py:43 - [查询改写] 原始：扫地机器人保养指南 -> 改写后：扫地机器人 维护保养 方法
+2026-03-28 20:23:15,010 - agnet - INFO - middleware.py:36 - [monitor_tool] 工具：rag_summarize调用成功，耗时：2.01s
+2026-03-28 20:23:15,032 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有7条消息
+2026-03-28 20:23:15,032 - agnet - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|扫地机器人保养指南包括定期清理尘盒、边刷和滚刷，避免堵塞；保持电池充电状态，避免过度放电；定期检查并清洁传感器，确保正常工作；按照说明书要求进行软件更新；避免在潮湿或高温环境中使用。
+2026-03-28 20:24:01,319 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有1条消息
+2026-03-28 20:24:01,319 - agnet - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|生成我的使用报告
+2026-03-28 20:24:02,094 - agnet - INFO - middleware.py:20 - [monitor_tool] 监控工具执行：fill_context_for_report
+2026-03-28 20:24:02,094 - agnet - INFO - middleware.py:21 - [monitor_tool] 传入参数：{}
+2026-03-28 20:24:02,095 - agnet - INFO - middleware.py:36 - [monitor_tool] 工具：fill_context_for_report调用成功，耗时：0.00s
+2026-03-28 20:24:02,117 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有3条消息
+2026-03-28 20:24:02,117 - agnet - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|[fill_context_for_report]已经被调用
+2026-03-28 20:24:02,804 - agnet - INFO - middleware.py:20 - [monitor_tool] 监控工具执行：get_user_id
+2026-03-28 20:24:02,805 - agnet - INFO - middleware.py:21 - [monitor_tool] 传入参数：{}
+2026-03-28 20:24:02,805 - agnet - INFO - middleware.py:36 - [monitor_tool] 工具：get_user_id调用成功，耗时：0.00s
+2026-03-28 20:24:02,828 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有5条消息
+2026-03-28 20:24:02,828 - agnet - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|user_1010
+2026-03-28 20:24:03,476 - agnet - INFO - middleware.py:20 - [monitor_tool] 监控工具执行：get_current_month
+2026-03-28 20:24:03,476 - agnet - INFO - middleware.py:21 - [monitor_tool] 传入参数：{}
+2026-03-28 20:24:03,477 - agnet - INFO - middleware.py:36 - [monitor_tool] 工具：get_current_month调用成功，耗时：0.00s
+2026-03-28 20:24:03,499 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有7条消息
+2026-03-28 20:24:03,499 - agnet - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|2025-10
+2026-03-28 20:24:04,436 - agnet - INFO - middleware.py:20 - [monitor_tool] 监控工具执行：fetch_external_data
+2026-03-28 20:24:04,436 - agnet - INFO - middleware.py:21 - [monitor_tool] 传入参数：{'user_id': 'user_1010', 'month': '2025-10'}
+2026-03-28 20:24:04,437 - agnet - WARNING - agent_tools.py:110 - [generate_external_data]未能检索到用户：user_1010在2025-10的使用记录数据
+2026-03-28 20:24:04,437 - agnet - INFO - middleware.py:36 - [monitor_tool] 工具：fetch_external_data调用成功，耗时：0.00s
+2026-03-28 20:24:04,437 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有9条消息
+2026-03-28 20:24:04,437 - agnet - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|
+2026-03-28 20:24:05,163 - agnet - INFO - middleware.py:20 - [monitor_tool] 监控工具执行：rag_summarize
+2026-03-28 20:24:05,163 - agnet - INFO - middleware.py:21 - [monitor_tool] 传入参数：{'query': '扫地机器人保养建议'}
+2026-03-28 20:24:05,643 - agnet - INFO - rag_service.py:43 - [查询改写] 原始：扫地机器人保养建议 -> 改写后：扫地机器人 维护保养 方法
+2026-03-28 20:24:07,091 - agnet - INFO - middleware.py:36 - [monitor_tool] 工具：rag_summarize调用成功，耗时：1.93s
+2026-03-28 20:24:07,113 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有11条消息
+2026-03-28 20:24:07,113 - agnet - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|扫地机器人保养建议包括定期清理尘盒和滤网，避免堵塞影响吸力；定期检查并清洁边刷和滚刷，防止毛发缠绕；保持机器人的底部传感器干净，确保导航准确；按照说明书要求定期更换滤芯和电池，延长使用寿命。
+2026-03-28 20:32:14,861 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有1条消息
+2026-03-28 20:32:14,861 - agnet - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|扫地机器人如何选择
+2026-03-28 20:32:16,435 - agnet - INFO - middleware.py:20 - [monitor_tool] 监控工具执行：rag_summarize
+2026-03-28 20:32:16,435 - agnet - INFO - middleware.py:21 - [monitor_tool] 传入参数：{'query': '扫地机器人如何选择'}
+2026-03-28 20:32:16,978 - agnet - INFO - rag_service.py:43 - [查询改写] 原始：扫地机器人如何选择 -> 改写后：扫地机器人 选择指南
+2026-03-28 20:32:18,322 - agnet - INFO - middleware.py:36 - [monitor_tool] 工具：rag_summarize调用成功，耗时：1.89s
+2026-03-28 20:32:18,344 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有3条消息
+2026-03-28 20:32:18,344 - agnet - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|选择扫地机器人时，应关注其清洁能力、导航技术、续航时间、噪音水平、智能功能以及售后服务。建议根据家庭环境和需求，结合产品参数和用户评价进行选择。
+2026-03-28 20:32:56,423 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有1条消息
+2026-03-28 20:32:56,423 - agnet - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|扫地机器人迷路了怎么办？
+2026-03-28 20:32:57,359 - agnet - INFO - middleware.py:20 - [monitor_tool] 监控工具执行：rag_summarize
+2026-03-28 20:32:57,360 - agnet - INFO - middleware.py:21 - [monitor_tool] 传入参数：{'query': '扫地机器人迷路了怎么办'}
+2026-03-28 20:32:57,915 - agnet - INFO - rag_service.py:43 - [查询改写] 原始：扫地机器人迷路了怎么办 -> 改写后：扫地机器人迷路 解决方法
+2026-03-28 20:32:59,224 - agnet - INFO - middleware.py:36 - [monitor_tool] 工具：rag_summarize调用成功，耗时：1.86s
+2026-03-28 20:32:59,246 - agnet - INFO - middleware.py:62 - [log_before_model]即将调用模型，带有3条消息
+2026-03-28 20:32:59,246 - agnet - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|扫地机器人迷路时，可以尝试以下方法：重启机器人，清除障碍物，检查地图数据，或重置机器人至出厂设置。若问题持续，建议联系售后服务。

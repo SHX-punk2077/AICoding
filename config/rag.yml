@@ -1,0 +1,18 @@
+chat_model_name: qwen-turbo
+embedding_model_name: text-embedding-v3
+
+# 检索配置
+retrieval:
+  top_k: 3
+  score_threshold: 0.7
+  enable_hybrid_search: true
+  
+# 缓存配置
+cache:
+  enabled: true
+  ttl_seconds: 300
+  
+# 超时配置
+timeout:
+  tool_call_seconds: 10
+  model_response_seconds: 30
